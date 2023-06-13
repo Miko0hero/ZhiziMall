@@ -39,7 +39,7 @@
                 <input type="text" class="form-control form_control" placeholder="用户名" id="input_username" title="请输入用户名"/>
                 <input type="password" class="form-control form_control" placeholder="密码" id="input_password" title="请输入密码" autocomplete="on">
                 <span id="txt_error_msg"></span>
-                <button id="btn_login" class="btn btn-danger">登 入</button>                
+                <button type="button" id="btn_login" class="btn btn-danger">登 入</button>
             </form>
         </div>
     </div>

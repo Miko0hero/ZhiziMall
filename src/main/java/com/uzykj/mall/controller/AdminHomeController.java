@@ -39,19 +39,23 @@ public class AdminHomeController {
     @GetMapping()
     public String goToPage(HttpSession session, Map<String, Object> map) throws ParseException {
         Admin admin = (Admin) session.getAttribute("ADMIN_SESSION");
+        log.warn(admin.toString());
         Integer productTotal = productService.getTotal(null, new Byte[]{0, 2});
         Integer userTotal = userService.getTotal(null);
         Integer orderTotal = productOrderService.getTotal(null, new Byte[]{3});
-
         map.put("admin", admin);
+        log.warn(map.get("admin").toString());
         map.put("jsonObject", getChartData(null, null));
+        log.warn(map.get("jsonObject").toString());
         map.put("productTotal", productTotal);
         map.put("userTotal", userTotal);
         map.put("orderTotal", orderTotal);
-
+        log.warn("映射：" + map);
+        log.info("跳转一次");
         return "admin/homePage";
     }
 
+    @ResponseBody
     //转到后台管理-主页-ajax
     @GetMapping("/home")
     public String goToPageByAjax(HttpSession session, Map<String, Object> map) throws ParseException {
@@ -65,6 +69,7 @@ public class AdminHomeController {
         map.put("productTotal", productTotal);
         map.put("userTotal", userTotal);
         map.put("orderTotal", orderTotal);
+        log.info("跳转");
         return "admin/homeManagePage";
     }
 
@@ -108,31 +113,37 @@ public class AdminHomeController {
         log.info("获取总交易额订单列表");
         List<OrderGroup> orderGroupList = productOrderService.getTotalByDate(beginDate, endDate);
         log.info("根据订单状态分类");
+        log.warn(String.valueOf(orderGroupList.size()));
         int[] orderTotalArray = new int[7];//总交易订单数组
         int[] orderUnpaidArray = new int[7];//未付款订单数组
         int[] orderNotShippedArray = new int[7];//未发货订单叔祖
         int[] orderUnconfirmedArray = new int[7];//未确认订单数组
         int[] orderSuccessArray = new int[7];//交易成功数组
-        for (OrderGroup orderGroup : orderGroupList) {
-            int index = 0;
-            for (int j = 0; j < dateStr.length; j++) {
-                if (dateStr[j].equals(orderGroup.getProductOrder_pay_date())) {
-                    index = j;
+        if (!orderGroupList.isEmpty()) {
+            if(orderGroupList.get(0)!=null)
+            for (OrderGroup orderGroup : orderGroupList) {
+
+                int index = 0;
+                for (int j = 0; j < dateStr.length; j++) {
+                    if (dateStr[j].equals(orderGroup.getProductOrder_pay_date())) {
+                        index = j;
+                    }
                 }
-            }
-            switch (orderGroup.getProductOrder_status()) {
-                case 0:
-                    orderUnpaidArray[index] = orderGroup.getProductOrder_count();
-                    break;
-                case 1:
-                    orderNotShippedArray[index] = orderGroup.getProductOrder_count();
-                    break;
-                case 2:
-                    orderUnconfirmedArray[index] = orderGroup.getProductOrder_count();
-                    break;
-                case 3:
-                    orderSuccessArray[index] = orderGroup.getProductOrder_count();
-                    break;
+
+                switch (orderGroup.getProductOrder_status()) {
+                    case 0:
+                        orderUnpaidArray[index] = orderGroup.getProductOrder_count();
+                        break;
+                    case 1:
+                        orderNotShippedArray[index] = orderGroup.getProductOrder_count();
+                        break;
+                    case 2:
+                        orderUnconfirmedArray[index] = orderGroup.getProductOrder_count();
+                        break;
+                    case 3:
+                        orderSuccessArray[index] = orderGroup.getProductOrder_count();
+                        break;
+                }
             }
         }
         log.info("获取总交易订单数组");
@@ -146,6 +157,7 @@ public class AdminHomeController {
         jsonObject.put("orderUnconfirmedArray", JSONArray.parseArray(JSON.toJSONString(orderUnconfirmedArray)));
         jsonObject.put("orderSuccessArray", JSONArray.parseArray(JSON.toJSONString(orderSuccessArray)));
         jsonObject.put("dateStr", JSONArray.parseArray(JSON.toJSONString(dateStr)));
+        log.info(jsonObject.toJSONString());
         return jsonObject;
     }
 }

@@ -45,12 +45,14 @@ $(function () {
         $.ajax({
             url: "/mall/admin/login/doLogin",
             type:"post",
+            timeout:1000,
             data: {"username":username,"password":password},
             success:function (data) {
-                $("#btn_login").val("登录");
-                if (data.success) {
+                // $("#btn_login").val("登录");
+                const obj = eval("(" + data + ")");
+                if (obj.success) {
                     cookieUtil.setCookie("username", username, 30);
-                    window.location.href = "/mall/admin";
+                    location.href = "/mall/admin";
                 } else {
                     styleUtil.errorShow($("#txt_error_msg"), "用户名或密码错误");
                 }

@@ -32,8 +32,7 @@ public class ForeLoginController {
     @ResponseBody
     @PostMapping("/doLogin")
     public String checkLogin(HttpSession session, @RequestParam String username, @RequestParam String password) {
-        String encode = Md5Util.MD5Encode(password, "UTF-8");
-        User user = userService.login(username, encode);
+        User user = userService.login(username, password);
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("success", false);
 
