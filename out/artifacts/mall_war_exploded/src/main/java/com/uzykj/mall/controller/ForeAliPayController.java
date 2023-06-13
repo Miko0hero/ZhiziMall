@@ -16,7 +16,6 @@ import com.alipay.api.response.AlipayTradeRefundResponse;
 import com.uzykj.mall.entity.ProductOrder;
 import com.uzykj.mall.entity.User;
 import com.uzykj.mall.service.ProductOrderService;
-import com.uzykj.mall.util.pay.ali.AlipayConfig;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
