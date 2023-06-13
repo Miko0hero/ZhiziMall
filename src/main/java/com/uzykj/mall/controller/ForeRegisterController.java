@@ -1,6 +1,8 @@
 package com.uzykj.mall.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.uzykj.mall.entity.Address;
 import com.uzykj.mall.entity.User;
 import com.uzykj.mall.service.AddressService;
@@ -34,7 +36,6 @@ public class ForeRegisterController {
         List<Address> addressList = addressService.getRoot();
         List<Address> cityAddress = addressService.getList(null, addressId);
         List<Address> districtAddress = addressService.getList(null, cityAddressId);
-
         map.put("addressList", addressList);
         map.put("cityList", cityAddress);
         map.put("districtList", districtAddress);
@@ -60,7 +61,7 @@ public class ForeRegisterController {
             JSONObject object = new JSONObject();
             object.put("success", false);
             object.put("msg", "用户名已存在，请重新输入！");
-            return object.toJSONString();
+            return JSON.toJSONString(object, SerializerFeature.BrowserCompatible);
         }
 
         String encode = Md5Util.MD5Encode(user_password, "UTF-8");
@@ -76,7 +77,7 @@ public class ForeRegisterController {
         if (userService.add(user)) {
             JSONObject object = new JSONObject();
             object.put("success", true);
-            return object.toJSONString();
+            return JSON.toJSONString(object, SerializerFeature.BrowserCompatible);
         } else {
             throw new RuntimeException();
         }
