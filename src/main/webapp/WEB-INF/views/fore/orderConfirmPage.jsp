@@ -107,12 +107,6 @@
                     <span class="info_value">${requestScope.productOrder.productOrder_code}</span>
                 </td>
             </tr>
-            <!-- <tr>
-                <td colspan="4">
-                    <span class="info_label">卖家商铺昵称：</span>
-                    <span class="info_value">贤趣模拟旗舰店</span>
-                </td>
-            </tr> -->
             <tr>
                 <td colspan="4">
                     <span class="info_label">成交时间：</span>

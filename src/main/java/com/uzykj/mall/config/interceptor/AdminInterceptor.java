@@ -12,10 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Admin 过滤器
+ * @Admin 过滤器
  *
- * @author ghostxbh
- * @date 2021-10-21
+ * @author ghostxb
  */
 @Component
 public class AdminInterceptor implements HandlerInterceptor {

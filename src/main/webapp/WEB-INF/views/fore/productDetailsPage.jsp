@@ -83,8 +83,8 @@
         </div>
         <div class="qrcodeFooter">
             <img src="${pageContext.request.contextPath}/static/images/fore/WebsiteImage/scan_icon2.png">
-            <p>打开 <a href="https://mall.uzykj.com"></a> | <a
-                    href="https://uzykj.com/m"></a>扫一扫登录</p>
+            <p>打开 <a href=""></a> | <a
+                    href=""></a>扫一扫登录</p>
         </div>
         <div class="loginLinks">
             <a href="JavaScript:void(0)" id="pwdLogin">密码登录</a>

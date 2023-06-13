@@ -3,7 +3,7 @@
 <head>
     <script src="${pageContext.request.contextPath}/static/js/admin/admin_login.js"></script>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/admin/admin_login.css"/>
-    <title>柚子云购 - 管理登录</title>
+    <title>南昌大学 - 管理登录</title>
 </head>
 <body>
 <div id="div_background">
@@ -29,7 +29,7 @@
         </ul>
     </div>
     <div id="div_main">
-        <div id="div_head"><p>柚子云购 <span>管理后台</span></p></div>
+        <div id="div_head"><p>南昌大学 <span>管理后台</span></p></div>
         <div id="div_content">
             <img id="img_profile_picture"
                  src="${pageContext.request.contextPath}/static/images/admin/loginPage/default_profile_picture-128x128.png"

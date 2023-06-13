@@ -10,7 +10,11 @@ public class Address {
 
     @Override
     public String toString() {
-        return "Address{" + "address_areaId='" + address_areaId + '\'' + ", address_name='" + address_name + '\'' + ", address_regionId=" + address_regionId + '}';
+        return "Address{" +
+                "address_areaId='" + address_areaId + '\'' +
+                ", address_name='" + address_name + '\'' +
+                ", address_regionId=" + address_regionId +
+                '}';
     }
 
     public Address(String address_areaId, String address_name, Address address_regionId) {

@@ -1,26 +1,9 @@
-/*
- Navicat Premium Data Transfer
-
- Source Server         : 腾讯云101.42.109.94
- Source Server Type    : MySQL
- Source Server Version : 50735
- Source Host           : 101.42.109.94:3306
- Source Schema         : uzymall
-
- Target Server Type    : MySQL
- Target Server Version : 50735
- File Encoding         : 65001
-
- Date: 22/10/2021 09:47:45
-*/
-
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
 -- Table structure for address
 -- ----------------------------
-use uzymall;
 DROP TABLE IF EXISTS `address`;
 CREATE TABLE `address`  (
   `address_areaId` char(6) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
