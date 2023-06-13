@@ -169,15 +169,8 @@ $(function () {
             dataType: "json",
             success: function (data) {
                 if (data.success) {
-                    $(".msg").stop(true, true).animate({
-                        opacity: 1
-                    }, 550, function () {
-                        $(".msg").animate({
-                            opacity: 0
-                        }, 1500, function () {
-                            location.href = "/mall/login";
-                        });
-                    });
+                    alert(data.msg);
+                    location.href = "/mall/login";
                 } else {
                     $("#user_name").css("border", "1px solid red")
                         .next().text(data.msg).css("display", "inline-block").css("color", "red");

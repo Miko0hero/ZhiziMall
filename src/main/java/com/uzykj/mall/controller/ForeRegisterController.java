@@ -77,6 +77,7 @@ public class ForeRegisterController {
         if (userService.add(user)) {
             JSONObject object = new JSONObject();
             object.put("success", true);
+            object.put("msg","注册成功!");
             return JSON.toJSONString(object, SerializerFeature.BrowserCompatible);
         } else {
             throw new RuntimeException();
