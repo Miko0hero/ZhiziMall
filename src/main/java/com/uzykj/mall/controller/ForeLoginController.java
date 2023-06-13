@@ -3,6 +3,7 @@ package com.uzykj.mall.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.uzykj.mall.entity.User;
 import com.uzykj.mall.service.UserService;
+import com.uzykj.mall.util.Md5Util;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -31,7 +32,8 @@ public class ForeLoginController {
     @ResponseBody
     @PostMapping("/doLogin")
     public String checkLogin(HttpSession session, @RequestParam String username, @RequestParam String password) {
-        User user = userService.login(username, password);
+        String encode = Md5Util.MD5Encode(password, "UTF-8");
+        User user = userService.login(username, encode);
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("success", false);
 
