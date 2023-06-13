@@ -1,6 +1,8 @@
 package com.uzykj.mall.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.uzykj.mall.entity.Address;
 import com.uzykj.mall.service.AddressService;
 import lombok.extern.slf4j.Slf4j;
@@ -28,13 +30,13 @@ public class ForeAddressController {
         List<Address> addressList = addressService.getList(null, areaId);
         if (addressList == null || addressList.size() <= 0) {
             object.put("success", false);
-            return object.toJSONString();
+            return JSON.toJSONString(object, SerializerFeature.BrowserCompatible);
         }
         List<Address> childAddressList = addressService.getList(null, addressList.get(0).getAddress_areaId());
 
         object.put("success", true);
         object.put("addressList", addressList);
         object.put("childAddressList", childAddressList);
-        return object.toJSONString();
+        return JSON.toJSONString(object, SerializerFeature.BrowserCompatible);
     }
 }
