@@ -17,9 +17,9 @@ import java.util.List;
 
 @Service("productOrderService")
 public class ProductOrderServiceImpl implements ProductOrderService,Serializable {
+    @Resource(name = "productOrderMapper")
     private ProductOrderMapper productOrderMapper;
 
-    @Resource(name = "productOrderMapper")
     public void setProductOrderMapper(ProductOrderMapper productOrderMapper) {
         this.productOrderMapper = productOrderMapper;
     }

@@ -1,10 +1,11 @@
 package com.uzykj.mall.dao;
 
 import com.uzykj.mall.entity.Address;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
-
+@Mapper
 public interface AddressMapper {
     Integer insertOne(@Param("address") Address address);
     Integer updateOne(@Param("address") Address address);

@@ -2,10 +2,11 @@ package com.uzykj.mall.dao;
 
 import com.uzykj.mall.entity.Admin;
 import com.uzykj.mall.util.PageUtil;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
-
+@Mapper
 public interface AdminMapper {
     Integer insertOne(@Param("admin") Admin admin);
     Integer updateOne(@Param("admin") Admin admin);

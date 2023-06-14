@@ -3,12 +3,13 @@ package com.uzykj.mall.dao;
 import com.uzykj.mall.entity.OrderGroup;
 import com.uzykj.mall.entity.ProductOrderItem;
 import com.uzykj.mall.util.PageUtil;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;
 import java.util.List;
 
-
+@Mapper
 public interface ProductOrderItemMapper {
     Integer insertOne(@Param("productOrderItem") ProductOrderItem productOrderItem);
 

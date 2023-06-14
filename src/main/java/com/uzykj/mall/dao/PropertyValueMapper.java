@@ -2,10 +2,11 @@ package com.uzykj.mall.dao;
 
 import com.uzykj.mall.entity.PropertyValue;
 import com.uzykj.mall.util.PageUtil;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
-
+@Mapper
 public interface PropertyValueMapper {
     Integer insertOne(@Param("propertyValue") PropertyValue propertyValue);
 

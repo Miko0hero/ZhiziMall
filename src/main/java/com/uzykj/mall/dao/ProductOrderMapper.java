@@ -4,12 +4,13 @@ import com.uzykj.mall.entity.OrderGroup;
 import com.uzykj.mall.entity.ProductOrder;
 import com.uzykj.mall.util.OrderUtil;
 import com.uzykj.mall.util.PageUtil;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Update;
 
 import java.util.Date;
 import java.util.List;
-
+@Mapper
 public interface ProductOrderMapper {
     Integer insertOne(@Param("productOrder") ProductOrder productOrder);
 
