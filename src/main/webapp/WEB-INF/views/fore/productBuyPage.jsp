@@ -175,7 +175,7 @@
                 styleUtil.specialBasicErrorShow($("#label_order_receiver"));
                 yn = false;
             }
-            var re = /^(1[3-8][0-9]{9})$/;
+            var re = /^1[3-9]\d{9}$/;
             if (!re.test(productOrder_mobile)) {
                 styleUtil.specialBasicErrorShow($("#label_order_phone"));
                 yn = false;
@@ -242,7 +242,7 @@
                 styleUtil.specialBasicErrorShow($("#label_order_receiver"));
                 yn = false;
             }
-            var re = /^(13[0-9]{9})|(15[89][0-9]{8})$/;
+            var re = /^(1[3-9][0-9]{9})$/;
             if (!re.test(productOrder_mobile)) {
                 styleUtil.specialBasicErrorShow($("#label_order_phone"));
                 yn = false;
@@ -268,6 +268,7 @@
             });
             $.ajax({
                 url: "/mall/order/list",
+                timeout:400,
                 type: "POST",
                 data: {
                     "addressId": addressId,
@@ -281,7 +282,9 @@
                 },
                 traditional: true,
                 success: function (data) {
-                    if (data.success) {
+                    var obj = eval("("+data+")");
+                    if (obj.success) {
+                        alert(data.url);
                         location.href = "/mall" + data.url;
                         return true;
                     } else {
