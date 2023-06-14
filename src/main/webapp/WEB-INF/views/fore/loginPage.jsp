@@ -29,15 +29,10 @@
             border-bottom: 1px solid #e5e5e5;
         }*/
     </style>
-    <title>柚子云购 -- 登录</title>
+    <title>栀子花开 -- 登录</title>
 </head>
 <body>
 <%@ include file="include/navigator.jsp" %>
-<%--<nav id="baseNavigator">
-   <a href="${pageContext.request.contextPath}" target="_self">
-        <img src="${pageContext.request.contextPath}/static/images/fore/WebsiteImage/logo.png" style="margin-top:-30px;"/>
-  </a>
-</nav>--%>
 <div class="content">
     <div class="contentMain"></div>
     <div class="loginDiv">
@@ -84,8 +79,8 @@
             </div>
             <div class="qrcodeFooter">
                 <img src="${pageContext.request.contextPath}/static/images/fore/WebsiteImage/scan_icon2.png">
-                <p>打开 <a href="https://mall.uzykj.com">手机</a> | <a
-                        href="https://uzykj.com/m">手机</a>扫一扫登录</p>
+                <p>打开 <a href="">手机</a> | <a
+                        href="">手机</a>扫一扫登录</p>
             </div>
             <div class="loginLinks">
                 <a href="JavaScript:void(0)" id="pwdLogin">密码登录</a>

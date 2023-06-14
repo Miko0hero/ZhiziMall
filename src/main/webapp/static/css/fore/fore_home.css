@@ -13,8 +13,9 @@ nav {
 
 .header a> img {
     float: left;
+    padding-top: 30px;
     width: 240px;
-    height: 115px;
+    height: 69px;
 }
 
 .header > .mallSearch {

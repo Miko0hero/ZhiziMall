@@ -1,12 +1,9 @@
 package com.uzykj.mall.service.impl;
 
-import com.uzykj.mall.service.IWeixinPayService;
 import com.uzykj.mall.util.FileUtil;
 import com.uzykj.mall.util.HttpUtil;
-import com.uzykj.mall.util.pay.wx.ClientCustomSSL;
 import com.uzykj.mall.util.pay.wx.Constants;
 import com.uzykj.mall.util.pay.wx.Product;
-import com.uzykj.mall.util.pay.wx.WxpayConfig;
 import com.uzykj.mall.util.pay.wx.util.WxpayUtil;
 import com.uzykj.mall.util.pay.wx.util.ZxingUtil;
 import net.sf.json.JSONObject;

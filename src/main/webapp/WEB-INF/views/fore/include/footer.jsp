@@ -3,7 +3,7 @@
 <div class="footer-copyright">
     <div class="footer">
         <div class="copyright">
-                    柚子云技术团队 &copy; <a href="https://uzykj.com"> https://uzykj.com </a>
+                    栀子花开 &copy; <a href=""></a>
         </div>
     </div>
 </div>

@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : 腾讯云101.42.109.94
+ Source Server         : mysql
  Source Server Type    : MySQL
- Source Server Version : 50735
- Source Host           : 101.42.109.94:3306
+ Source Server Version : 80033 (8.0.33)
+ Source Host           : localhost:3306
  Source Schema         : uzymall
 
  Target Server Type    : MySQL
- Target Server Version : 50735
+ Target Server Version : 80033 (8.0.33)
  File Encoding         : 65001
 
- Date: 22/10/2021 09:47:45
+ Date: 13/06/2023 17:16:26
 */
 
 SET NAMES utf8mb4;
@@ -20,16 +20,15 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 -- Table structure for address
 -- ----------------------------
-use uzymall;
 DROP TABLE IF EXISTS `address`;
 CREATE TABLE `address`  (
-  `address_areaId` char(6) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `address_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `address_regionId` char(6) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `address_areaId` char(6) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `address_name` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `address_regionId` char(6) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   PRIMARY KEY (`address_areaId`) USING BTREE,
-  INDEX `address_regionId`(`address_regionId`) USING BTREE,
+  INDEX `address_regionId`(`address_regionId` ASC) USING BTREE,
   CONSTRAINT `address_ibfk_1` FOREIGN KEY (`address_regionId`) REFERENCES `address` (`address_areaId`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of address
@@ -3788,14 +3787,14 @@ INSERT INTO `address` VALUES ('820301', '圣方济各堂区', '820300');
 -- ----------------------------
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE `admin`  (
-  `admin_id` int(10) NOT NULL AUTO_INCREMENT,
-  `admin_name` varchar(25) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `admin_nickname` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '',
-  `admin_password` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `admin_profile_picture_src` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `admin_id` int NOT NULL AUTO_INCREMENT,
+  `admin_name` varchar(25) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
+  `admin_nickname` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL DEFAULT '',
+  `admin_password` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
+  `admin_profile_picture_src` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`admin_id`) USING BTREE,
-  UNIQUE INDEX `un_admin_name`(`admin_name`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+  UNIQUE INDEX `un_admin_name`(`admin_name` ASC) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of admin
@@ -3807,11 +3806,11 @@ INSERT INTO `admin` VALUES (1, 'zxc123', 'zxc', 'zxc123', '0675df50-7e0b-4158-8a
 -- ----------------------------
 DROP TABLE IF EXISTS `category`;
 CREATE TABLE `category`  (
-  `category_id` int(10) NOT NULL AUTO_INCREMENT,
-  `category_name` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `category_image_src` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `category_id` int NOT NULL AUTO_INCREMENT,
+  `category_name` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `category_image_src` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`category_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 314 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 314 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of category
@@ -3829,17 +3828,17 @@ INSERT INTO `category` VALUES (313, '扫地机器人', 'https://resource.smartis
 -- ----------------------------
 DROP TABLE IF EXISTS `product`;
 CREATE TABLE `product`  (
-  `product_id` int(10) NOT NULL AUTO_INCREMENT,
-  `product_name` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `product_title` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `product_id` int NOT NULL AUTO_INCREMENT,
+  `product_name` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `product_title` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   `product_price` decimal(10, 2) NULL DEFAULT NULL,
   `product_sale_price` decimal(10, 2) NOT NULL,
   `product_create_date` datetime NOT NULL,
-  `product_category_id` int(10) NOT NULL,
+  `product_category_id` int NOT NULL,
   `product_isEnabled` tinyint(1) NOT NULL DEFAULT 0,
   PRIMARY KEY (`product_id`) USING BTREE,
-  INDEX `product_ibfk_1`(`product_category_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1000839 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+  INDEX `product_ibfk_1`(`product_category_id` ASC) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1000839 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of product
@@ -4083,14 +4082,14 @@ INSERT INTO `product` VALUES (1000838, 'APIYOO 皮卡丘声波儿童牙刷', '�
 -- ----------------------------
 DROP TABLE IF EXISTS `productimage`;
 CREATE TABLE `productimage`  (
-  `productimage_id` int(10) NOT NULL AUTO_INCREMENT,
-  `productimage_type` tinyint(1) UNSIGNED NOT NULL,
-  `productimage_src` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `productimage_product_id` int(10) NOT NULL,
-  `productimage_store` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `productimage_id` int NOT NULL AUTO_INCREMENT,
+  `productimage_type` tinyint UNSIGNED NOT NULL,
+  `productimage_src` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `productimage_product_id` int NOT NULL,
+  `productimage_store` varchar(10) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
   PRIMARY KEY (`productimage_id`) USING BTREE,
-  INDEX `productimage_product_id`(`productimage_product_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 4326 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+  INDEX `productimage_product_id`(`productimage_product_id` ASC) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 4352 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of productimage
@@ -4364,74 +4363,101 @@ INSERT INTO `productimage` VALUES (4322, 0, 'https://resource.smartisan.com/reso
 INSERT INTO `productimage` VALUES (4323, 0, 'https://resource.smartisan.com/resource/7e0dd2572ecfedfd412e00cd82a4a64b.jpg', 1000603, '');
 INSERT INTO `productimage` VALUES (4324, 0, 'https://resource.smartisan.com/resource/834e8388b0017c457c98baa6545cdfb2.jpg', 1000591, '');
 INSERT INTO `productimage` VALUES (4325, 0, 'https://resource.smartisan.com/resource/9bffe702b1f0aea221b1f18ddf886958.jpg', 1000556, '');
+INSERT INTO `productimage` VALUES (4326, 0, 'https://img14.360buyimg.com/n1/jfs/t3106/156/6393674664/541287/38705339/58a3f7c5N49078a31.jpg', 183, ' ');
+INSERT INTO `productimage` VALUES (4327, 0, 'https://img10.360buyimg.com/n0/jfs/t18544/186/1238454627/200923/50ae4350/5ac208b5Nc9b60f15.jpg', 184, ' ');
+INSERT INTO `productimage` VALUES (4328, 0, 'https://ts1.cn.mm.bing.net/th/id/R-C.de819e709be146ed49f3415825908860?rik=PVGNThI%2f5m%2fQ8g&riu=http%3a%2f%2fwww.ctacgroup.com%2fctacgroup%2fuploadfile%2ffile_up1581664476x.png&ehk=Mx2cNNauyv2GhN%2fORkN50tey6YeUpuG6nntyyQd4ULs%3d&risl=&pid=ImgRaw&r=0', 185, ' ');
+INSERT INTO `productimage` VALUES (4329, 0, 'https://img11.360buyimg.com/n0/jfs/t1/69181/17/1499/220709/5cfdeeadE9b38d2b0/c77f8812eaf61ae1.jpg', 186, ' ');
+INSERT INTO `productimage` VALUES (4330, 0, 'https://img3.doubanio.com/lpic/s10233063.jpg', 187, ' ');
+INSERT INTO `productimage` VALUES (4331, 0, 'https://img11.360buyimg.com/n0/jfs/t14869/97/1646868764/272368/74e1f83/5a543629N588c235f.jpg', 188, ' ');
+INSERT INTO `productimage` VALUES (4332, 0, 'https://pic.arkread.com/cover/ebook/f/10170000.1653711990.jpg!cover_default.jpg', 189, ' ');
+INSERT INTO `productimage` VALUES (4333, 0, 'https://tse2-mm.cn.bing.net/th/id/OIP-C.ihxIYhui2DWA8ctm7zugSgHaK-?pid=ImgDet&rs=1', 190, ' ');
+INSERT INTO `productimage` VALUES (4334, 0, 'https://piccdn3.umiwi.com/img/201902/17/201902172239375946284229.jpg', 191, ' ');
+INSERT INTO `productimage` VALUES (4335, 0, 'https://ts1.cn.mm.bing.net/th/id/R-C.edbfac095e610d1dd59cbc6bc5f3b57d?rik=DFkN5sGWpvcx1A&riu=http%3a%2f%2fwww.dlsstax.com%2forder%2fdata%2fuploads%2f2018%2f06%2f12%2f12.jpg&ehk=9G89bldrDMu%2fiOfXJkGBnyNNcECese4GtjrDnDwKZi8%3d&risl=&pid=ImgRaw&r=0', 192, ' ');
+INSERT INTO `productimage` VALUES (4336, 0, 'https://ts1.cn.mm.bing.net/th/id/R-C.9a6ccbe07100f10ec6420047d6b8607c?rik=NXTPN5B5hJ2sjA&riu=http%3a%2f%2fwww.dlsstax.com%2forder%2fdata%2fuploads%2f2018%2f10%2f22%2f13.jpg&ehk=%2frnFWHTL5bp3%2b8o%2fTWLQUKHTJ78W3KePtwiyweLKCO0%3d&risl=&pid=ImgRaw&r=0', 193, ' ');
+INSERT INTO `productimage` VALUES (4337, 0, 'https://img13.360buyimg.com/n1/jfs/t1/97082/24/4668/545421/5de87286E52c0df3b/30434e0a8caaaf7c.png', 194, ' ');
+INSERT INTO `productimage` VALUES (4338, 0, 'https://ts1.cn.mm.bing.net/th/id/R-C.7bc2e6a9069ba04dc15ec4ddc942742a?rik=RZNP68eb%2bKdzyA&riu=http%3a%2f%2fimg3.jarhu.com%2fgoodimg%2f201806%2f081%2fgi1528423812955.jpg&ehk=6XnyrhHJ9AthyleizVGVxteR%2b2IYPJNp5Fdq%2flDX3Pk%3d&risl=&pid=ImgRaw&r=0', 195, ' ');
+INSERT INTO `productimage` VALUES (4339, 0, 'https://tse1-mm.cn.bing.net/th/id/OIP-C.VxO69ufVhHkV31Gd6SlChwHaKx?pid=ImgDet&rs=1', 196, ' ');
+INSERT INTO `productimage` VALUES (4340, 0, 'https://tse3-mm.cn.bing.net/th/id/OIP-C.OiwXV8i2AxYMYg55GT5FDwHaHa?pid=ImgDet&rs=1', 197, ' ');
+INSERT INTO `productimage` VALUES (4341, 0, 'https://img3.jarhu.com/goodimg/202003/282/di1585410372196.jpg_big.jpg', 198, ' ');
+INSERT INTO `productimage` VALUES (4342, 0, 'https://tse3-mm.cn.bing.net/th/id/OIP-C.aACXjpmt0o8C_4DfhJHi6wHaHh?pid=ImgDet&rs=1', 199, ' ');
+INSERT INTO `productimage` VALUES (4343, 0, 'https://img10.360buyimg.com/n1/jfs/t4267/221/3700562874/493988/200b334b/58e5fb8dNbc6edb01.jpg', 200, ' ');
+INSERT INTO `productimage` VALUES (4344, 0, 'https://tse3-mm.cn.bing.net/th/id/OIP-C.JcgyQ4FIFl5Ny1M9INztNAHaIz?pid=ImgDet&rs=1', 201, ' ');
+INSERT INTO `productimage` VALUES (4345, 0, 'https://img13.360buyimg.com/n1/jfs/t5341/112/1492882050/509938/1ef90aca/59115b74N851a7080.jpg', 202, ' ');
+INSERT INTO `productimage` VALUES (4346, 0, 'https://img3.jarhu.com/goodimg/202003/282/di1585410372196.jpg_big.jpg', 203, ' ');
+INSERT INTO `productimage` VALUES (4347, 0, 'https://tse3-mm.cn.bing.net/th/id/OIP-C.aACXjpmt0o8C_4DfhJHi6wHaHh?pid=ImgDet&rs=1', 204, ' ');
+INSERT INTO `productimage` VALUES (4348, 0, 'https://img10.360buyimg.com/n1/jfs/t4267/221/3700562874/493988/200b334b/58e5fb8dNbc6edb01.jpg', 205, ' ');
+INSERT INTO `productimage` VALUES (4349, 0, 'https://tse3-mm.cn.bing.net/th/id/OIP-C.JcgyQ4FIFl5Ny1M9INztNAHaIz?pid=ImgDet&rs=1', 206, ' ');
+INSERT INTO `productimage` VALUES (4350, 0, 'https://img13.360buyimg.com/n1/jfs/t5341/112/1492882050/509938/1ef90aca/59115b74N851a7080.jpg', 207, ' ');
 
 -- ----------------------------
 -- Table structure for productorder
 -- ----------------------------
 DROP TABLE IF EXISTS `productorder`;
 CREATE TABLE `productorder`  (
-  `productorder_id` int(10) NOT NULL AUTO_INCREMENT,
-  `productorder_code` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `productorder_address` char(6) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `productorder_detail_address` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `productorder_post` char(6) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `productorder_receiver` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `productorder_mobile` char(11) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `productorder_id` int NOT NULL AUTO_INCREMENT,
+  `productorder_code` varchar(30) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `productorder_address` char(6) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `productorder_detail_address` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `productorder_post` char(6) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `productorder_receiver` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `productorder_mobile` char(11) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   `productorder_pay_date` datetime NOT NULL,
   `productorder_delivery_date` datetime NULL DEFAULT NULL,
   `productorder_confirm_date` datetime NULL DEFAULT NULL,
   `productorder_status` tinyint(1) NOT NULL,
-  `productorder_user_id` int(10) NOT NULL,
+  `productorder_user_id` int NOT NULL,
   PRIMARY KEY (`productorder_id`) USING BTREE,
-  UNIQUE INDEX `un_productorder_code`(`productorder_code`) USING BTREE,
-  INDEX `productorder_address`(`productorder_address`) USING BTREE,
-  INDEX `productorder_ibfk_2`(`productorder_user_id`) USING BTREE,
+  UNIQUE INDEX `un_productorder_code`(`productorder_code` ASC) USING BTREE,
+  INDEX `productorder_address`(`productorder_address` ASC) USING BTREE,
+  INDEX `productorder_ibfk_2`(`productorder_user_id` ASC) USING BTREE,
   CONSTRAINT `productorder_ibfk_1` FOREIGN KEY (`productorder_address`) REFERENCES `address` (`address_areaId`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 262 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 262 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of productorder
 -- ----------------------------
-INSERT INTO `productorder` VALUES (261, '2021102209242001', '110101', 'zzz22', '', '升水', '13310102020', '2021-10-22 09:24:20', NULL, NULL, 0, 1);
 
 -- ----------------------------
 -- Table structure for productorderitem
 -- ----------------------------
 DROP TABLE IF EXISTS `productorderitem`;
 CREATE TABLE `productorderitem`  (
-  `productorderitem_id` int(10) NOT NULL AUTO_INCREMENT,
-  `productorderitem_number` smallint(5) UNSIGNED NOT NULL,
+  `productorderitem_id` int NOT NULL AUTO_INCREMENT,
+  `productorderitem_number` smallint UNSIGNED NOT NULL,
   `productorderitem_price` decimal(10, 2) NOT NULL,
-  `productorderitem_product_id` int(10) NOT NULL,
-  `productorderitem_order_id` int(10) NULL DEFAULT NULL,
-  `productorderitem_user_id` int(10) NOT NULL,
-  `productorderitem_userMessage` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `productorderitem_product_id` int NOT NULL,
+  `productorderitem_order_id` int NULL DEFAULT NULL,
+  `productorderitem_user_id` int NOT NULL,
+  `productorderitem_userMessage` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`productorderitem_id`) USING BTREE,
-  INDEX `productorderitem_product_id`(`productorderitem_product_id`) USING BTREE,
-  INDEX `productorderitem_order_id`(`productorderitem_order_id`) USING BTREE,
-  INDEX `productorderitem_user_id`(`productorderitem_user_id`) USING BTREE,
+  INDEX `productorderitem_product_id`(`productorderitem_product_id` ASC) USING BTREE,
+  INDEX `productorderitem_order_id`(`productorderitem_order_id` ASC) USING BTREE,
+  INDEX `productorderitem_user_id`(`productorderitem_user_id` ASC) USING BTREE,
   CONSTRAINT `productorderitem_ibfk_1` FOREIGN KEY (`productorderitem_product_id`) REFERENCES `product` (`product_id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `productorderitem_ibfk_2` FOREIGN KEY (`productorderitem_order_id`) REFERENCES `productorder` (`productorder_id`) ON DELETE CASCADE ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 313 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 317 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of productorderitem
 -- ----------------------------
 INSERT INTO `productorderitem` VALUES (301, 1, 48.00, 207, NULL, 15, NULL);
-INSERT INTO `productorderitem` VALUES (312, 1, 599.00, 1000365, 261, 1, '');
+INSERT INTO `productorderitem` VALUES (313, 1, 59.00, 1000836, NULL, 1, NULL);
+INSERT INTO `productorderitem` VALUES (314, 1, 899.00, 1000558, NULL, 1, NULL);
+INSERT INTO `productorderitem` VALUES (315, 1, 15.00, 203, NULL, 1, NULL);
+INSERT INTO `productorderitem` VALUES (316, 1, 2399.00, 1000602, NULL, 1, NULL);
 
 -- ----------------------------
 -- Table structure for property
 -- ----------------------------
 DROP TABLE IF EXISTS `property`;
 CREATE TABLE `property`  (
-  `property_id` int(10) NOT NULL AUTO_INCREMENT,
-  `property_name` varchar(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `property_category_id` int(10) NOT NULL,
+  `property_id` int NOT NULL AUTO_INCREMENT,
+  `property_name` varchar(25) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `property_category_id` int NOT NULL,
   PRIMARY KEY (`property_id`) USING BTREE,
-  INDEX `property_category_id`(`property_category_id`) USING BTREE,
+  INDEX `property_category_id`(`property_category_id` ASC) USING BTREE,
   CONSTRAINT `property_ibfk_1` FOREIGN KEY (`property_category_id`) REFERENCES `category` (`category_id`) ON DELETE CASCADE ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of property
@@ -4442,16 +4468,16 @@ CREATE TABLE `property`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `propertyvalue`;
 CREATE TABLE `propertyvalue`  (
-  `propertyvalue_id` int(10) NOT NULL AUTO_INCREMENT,
-  `propertyvalue_value` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `propertyvalue_property_id` int(10) NOT NULL,
-  `propertyvalue_product_id` int(10) NOT NULL,
+  `propertyvalue_id` int NOT NULL AUTO_INCREMENT,
+  `propertyvalue_value` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `propertyvalue_property_id` int NOT NULL,
+  `propertyvalue_product_id` int NOT NULL,
   PRIMARY KEY (`propertyvalue_id`) USING BTREE,
-  INDEX `propertyvalue_property_id`(`propertyvalue_property_id`) USING BTREE,
-  INDEX `propertyvalue_product_id`(`propertyvalue_product_id`) USING BTREE,
+  INDEX `propertyvalue_property_id`(`propertyvalue_property_id` ASC) USING BTREE,
+  INDEX `propertyvalue_product_id`(`propertyvalue_product_id` ASC) USING BTREE,
   CONSTRAINT `propertyvalue_ibfk_1` FOREIGN KEY (`propertyvalue_property_id`) REFERENCES `property` (`property_id`) ON DELETE CASCADE ON UPDATE RESTRICT,
   CONSTRAINT `propertyvalue_ibfk_2` FOREIGN KEY (`propertyvalue_product_id`) REFERENCES `product` (`product_id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of propertyvalue
@@ -4462,17 +4488,17 @@ CREATE TABLE `propertyvalue`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `review`;
 CREATE TABLE `review`  (
-  `review_id` int(10) NOT NULL AUTO_INCREMENT,
-  `review_content` mediumtext CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+  `review_id` int NOT NULL AUTO_INCREMENT,
+  `review_content` mediumtext CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL,
   `review_createdate` datetime NULL DEFAULT NULL,
-  `review_user_id` int(10) NULL DEFAULT NULL,
-  `review_product_id` int(10) NULL DEFAULT NULL,
-  `review_orderItem_id` int(10) NULL DEFAULT NULL,
+  `review_user_id` int NULL DEFAULT NULL,
+  `review_product_id` int NULL DEFAULT NULL,
+  `review_orderItem_id` int NULL DEFAULT NULL,
   PRIMARY KEY (`review_id`) USING BTREE,
-  INDEX `review_user_id`(`review_user_id`) USING BTREE,
-  INDEX `review_product_id`(`review_product_id`) USING BTREE,
-  INDEX `review_orderItem_id`(`review_orderItem_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+  INDEX `review_user_id`(`review_user_id` ASC) USING BTREE,
+  INDEX `review_product_id`(`review_product_id` ASC) USING BTREE,
+  INDEX `review_orderItem_id`(`review_orderItem_id` ASC) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of review
@@ -4483,27 +4509,30 @@ CREATE TABLE `review`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user`  (
-  `user_id` int(10) NOT NULL AUTO_INCREMENT,
-  `user_name` varchar(25) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `user_nickname` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `user_password` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `user_realname` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `user_id` int NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(25) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
+  `user_nickname` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `user_password` varchar(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
+  `user_realname` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   `user_gender` tinyint(1) NOT NULL,
   `user_birthday` date NOT NULL,
-  `user_address` char(6) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `user_homeplace` char(6) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `user_profile_picture_src` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `user_address` char(6) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `user_homeplace` char(6) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `user_profile_picture_src` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`user_id`) USING BTREE,
-  UNIQUE INDEX `un_user_name`(`user_name`) USING BTREE,
-  INDEX `user_address`(`user_address`) USING BTREE,
-  INDEX `user_homeplace`(`user_homeplace`) USING BTREE,
+  UNIQUE INDEX `un_user_name`(`user_name` ASC) USING BTREE,
+  INDEX `user_address`(`user_address` ASC) USING BTREE,
+  INDEX `user_homeplace`(`user_homeplace` ASC) USING BTREE,
   CONSTRAINT `user_ibfk_1` FOREIGN KEY (`user_address`) REFERENCES `address` (`address_areaId`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `user_ibfk_2` FOREIGN KEY (`user_homeplace`) REFERENCES `address` (`address_areaId`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES (1, 'zxc123', '11', 'zxc123', 'zxc123', 0, '2018-10-08', '110000', '110000', NULL);
+INSERT INTO `user` VALUES (1, 'zxc123', '11', 'zxc123', 'zxc123', 0, '2018-10-08', '110100', '110000', NULL);
+INSERT INTO `user` VALUES (2, '123qwe', 'qwe', 'bb9838ddd3bf964fca9fefc425cf17bb', NULL, 0, '2023-06-01', '110101', '130000', NULL);
+INSERT INTO `user` VALUES (3, 'qweasd', 'qwe', 'bb9838ddd3bf964fca9fefc425cf17bb', NULL, 0, '2023-06-01', '110101', '130000', NULL);
+INSERT INTO `user` VALUES (4, '曾强', 'qwe', 'bb9838ddd3bf964fca9fefc425cf17bb', NULL, 0, '2023-06-01', '110101', '130000', NULL);
 
 SET FOREIGN_KEY_CHECKS = 1;

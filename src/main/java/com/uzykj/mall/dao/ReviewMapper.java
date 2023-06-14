@@ -2,11 +2,10 @@ package com.uzykj.mall.dao;
 
 import com.uzykj.mall.entity.Review;
 import com.uzykj.mall.util.PageUtil;
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
-@Mapper
+
 public interface ReviewMapper {
     Integer insertOne(@Param("review") Review review);
     Integer updateOne(@Param("review") Review review);

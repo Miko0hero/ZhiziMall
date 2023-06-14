@@ -44,12 +44,11 @@ $(function () {
         }
         $.ajax({
             url: "/mall/admin/login/doLogin",
+            timeout:400,
             type:"post",
-            timeout:1000,
             data: {"username":username,"password":password},
             success:function (data) {
-                // $("#btn_login").val("登录");
-                const obj = eval("(" + data + ")");
+                var obj = eval("("+data+")");
                 if (obj.success) {
                     cookieUtil.setCookie("username", username, 30);
                     location.href = "/mall/admin";

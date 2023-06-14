@@ -3,7 +3,6 @@ package com.uzykj.mall.util.pay.wx;
 import com.uzykj.mall.util.DateUtil;
 import com.uzykj.mall.util.HttpUtil;
 import com.uzykj.mall.util.pay.wx.util.WxpayUtil;
-import com.uzykj.mall.util.pay.ali.AlipayConfig;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

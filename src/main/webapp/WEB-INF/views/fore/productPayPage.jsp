@@ -73,28 +73,16 @@
                             </a>
                             <p></p>
                         </td>
-                        <%--<td>
-                            <a href="javascript:void(0);" class="selPayType1" lay-id="user2" paytype="84" >
-                                <img src="${pageContext.request.contextPath}/static/images/fore/WebsiteImage/weixin.gif" title="微信支付" width="140" height="40">
-                                <span></span>
-                            </a>
-                            <p></p>
-                        </td>--%>
                     </tr>
                     </tbody>
                 </table>
-                <!--花呗分期选择-->
+
                 <div id="divAlipayhb" class="instalments" style="display: none;"></div>
-                <!--end/花呗分期选择-->
-                <!-- <a  type="submit" class=" btn btn_big" value="立即支付">立即支付</a> -->
                 <input id="hidCommonPayType" type="hidden" value="51">
             </div>
             <a href="${pageContext.request.contextPath}/order/0/10" class="btn btn-danger">立即支付</a>
         </div>
     </form>
-    <!-- <div class="order_pay_div">
-        <a id="order_pay" class="order_pay_btn" href="javascript:void(0)" onclick="pay()">确认支付</a>
-    </div> -->
 </div>
 <!-- 模态框（Modal） -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -121,22 +109,7 @@
             localIp = "101.40.88.152";
         }
         $("#spbillCreateIp").val(localIp);
-        /* var img =
         ${requestScope.img}+"";
-	    if (img != null && img != "") {	    	
-	    	$("#erweima").append("<img alt='微信支付二维码' src='/AccountingService"+img+"'/>");
-	    	$("#myModal").modal("show");  
-		} */
-        //获取客户端的省市
-        /*  $.ajax({
-                url: 'http://api.map.baidu.com/location/ip?ak=ia6HfFL660Bvh43exmH9LrI6',
-                type: 'POST',
-                dataType: 'jsonp',
-                success:function(data) {
-                    //$('#city').html(data.content.address_detail.province + "," + data.content.address_detail.city)
-                    alert(data.content.address_detail.province + "," + data.content.address_detail.city);
-                }
-           }); */
 
     });
     //切换支付方式
@@ -167,13 +140,7 @@
             $("#formId").attr("action", url).submit();
         } else {
             //H5支付
-            /*if (window.screen.width <= 768) {
-                url = getRootPath()+"/mall/weixinMobile/h5pay";
-                $("#formId").attr("action",url).submit();
-            } else {
-                url = getRootPath()+"/mall/wxpay/pcPay";
-                $("#formId").attr("action",url).submit();
-            }*/
+
             url = getRootPath() + "/mall/wxpay/pcPay";
             $("#formId").attr("action", url).submit();
         }

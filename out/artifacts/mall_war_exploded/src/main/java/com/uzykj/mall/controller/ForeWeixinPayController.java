@@ -1,11 +1,9 @@
 package com.uzykj.mall.controller;
 
 import com.uzykj.mall.entity.ProductOrder;
-import com.uzykj.mall.service.IWeixinPayService;
 import com.uzykj.mall.service.ProductOrderService;
 import com.uzykj.mall.util.FileUtil;
 import com.uzykj.mall.util.pay.wx.Product;
-import com.uzykj.mall.util.pay.wx.WxpayConfig;
 import com.uzykj.mall.util.pay.wx.util.WxpayUtil;
 import com.uzykj.mall.util.qiniu.QiniuUtil;
 import lombok.extern.slf4j.Slf4j;
