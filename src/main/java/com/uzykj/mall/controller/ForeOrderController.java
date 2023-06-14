@@ -2,6 +2,7 @@ package com.uzykj.mall.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.uzykj.mall.entity.*;
 import com.uzykj.mall.service.*;
 import com.uzykj.mall.util.OrderUtil;
@@ -746,7 +747,7 @@ public class ForeOrderController {
 
         // 整合订单对象
         ProductOrder productOrder = new ProductOrder()
-                .setProductOrder_status((byte) 0)
+                .setProductOrder_status((byte) 1)
                 .setProductOrder_address(new Address().setAddress_areaId(districtAddressId))
                 .setProductOrder_post(productOrder_post)
                 .setProductOrder_user(user)
@@ -856,7 +857,7 @@ public class ForeOrderController {
         log.info("生成的订单号为：{}", productOrder_code);
         log.info("整合订单对象");
         ProductOrder productOrder = new ProductOrder()
-                .setProductOrder_status((byte) 0)
+                .setProductOrder_status((byte) 1)
                 .setProductOrder_address(new Address().setAddress_areaId(districtAddressId))
                 .setProductOrder_post(productOrder_post)
                 .setProductOrder_user(user)
@@ -881,7 +882,8 @@ public class ForeOrderController {
 
         object.put("success", true);
         object.put("url", "/order/pay/" + productOrder.getProductOrder_code());
-        return object.toJSONString();
+//        return object.toJSONString();
+        return JSON.toJSONString(object, SerializerFeature.BrowserCompatible);
     }
 
     //创建订单项-购物车-ajax

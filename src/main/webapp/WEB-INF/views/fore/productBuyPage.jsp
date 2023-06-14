@@ -285,7 +285,9 @@
                     var obj = eval("("+data+")");
                     if (obj.success) {
                         alert(data.url);
-                        location.href = "/mall" + data.url;
+                        // location.href = "/mall" + data.url;
+                        console.log("跳转成功");
+                        location.href="/mall/order/0/10"
                         return true;
                     } else {
                         alert("订单创建失败，请稍后再试！");
