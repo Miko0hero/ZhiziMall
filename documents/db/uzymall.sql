@@ -11,7 +11,7 @@
  Target Server Version : 80033 (8.0.33)
  File Encoding         : 65001
 
- Date: 13/06/2023 17:16:26
+ Date: 14/06/2023 14:35:44
 */
 
 SET NAMES utf8mb4;
@@ -3877,26 +3877,26 @@ INSERT INTO `product` VALUES (1000365, '畅呼吸除霾除甲醛高效复合滤�
 INSERT INTO `product` VALUES (1000405, '畅呼吸智能空气净化器 · 超级除甲醛版', '【畅呼吸 限时直降】 畅呼吸智能空气净化器 · 超级除甲醛版', 2999.00, 2499.00, '2020-05-29 19:16:04', 155, 0);
 INSERT INTO `product` VALUES (1000422, '坚果“电池形电池”移动电源', '【】 坚果“电池形电池”移动电源', 69.00, 0.00, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000428, 'Smartisan 半入耳式耳机', '【精选配件 限时直降】 Smartisan 半入耳式耳机', 59.00, 39.00, '2020-05-29 19:16:04', 185, 0);
-INSERT INTO `product` VALUES (1000464, '坚果 R1', '【】 坚果 R1', 2999.00, 0.00, '2020-05-29 19:16:03', 151, 0);
+INSERT INTO `product` VALUES (1000464, '坚果 R1', '【】 坚果 R1', 2999.00, 1999.00, '2020-05-29 19:16:03', 151, 0);
 INSERT INTO `product` VALUES (1000470, '坚果 QuickCharge 4+ 快速充电器', '【精选配件 限时直降】 坚果 QuickCharge 4+ 快速充电器', 59.00, 49.00, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000471, '坚果 Type-C To Type-C 数据线', '【精选配件 限时直降】 坚果 Type-C To Type-C 数据线', 39.00, 36.00, '2020-05-29 19:16:04', 185, 0);
-INSERT INTO `product` VALUES (1000479, '坚果 Pro 2 特别版', '【】 坚果 Pro 2 特别版', 1899.00, 0.00, '2020-05-29 19:16:03', 151, 0);
-INSERT INTO `product` VALUES (1000517, '坚果 Pro 2S', '【】 坚果 Pro 2S', 1798.00, 0.00, '2020-05-29 19:16:03', 151, 0);
+INSERT INTO `product` VALUES (1000479, '坚果 Pro 2 特别版', '【】 坚果 Pro 2 特别版', 1899.00, 1599.00, '2020-05-29 19:16:03', 151, 0);
+INSERT INTO `product` VALUES (1000517, '坚果 Pro 2S', '【】 坚果 Pro 2S', 1798.00, 1398.00, '2020-05-29 19:16:03', 151, 0);
 INSERT INTO `product` VALUES (1000528, 'smartisan砖式蓝牙小音箱', '【精选配件 限时直降】 smartisan砖式蓝牙小音箱', 149.00, 99.00, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000529, '坚果三脚架自拍杆', '【精选配件 限时直降】 坚果三脚架自拍杆', 99.00, 89.00, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000530, '坚果彩虹数据线', '【精选配件 限时直降】 坚果彩虹数据线', 39.00, 36.00, '2020-05-29 19:16:04', 185, 0);
-INSERT INTO `product` VALUES (1000556, '各色DNA检测套装', '【】 各色DNA检测套装', 599.00, 0.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000556, '各色DNA检测套装', '【】 各色DNA检测套装', 599.00, 499.00, '2020-05-29 19:16:04', 311, 0);
 INSERT INTO `product` VALUES (1000558, '畅呼吸桌面式加湿器', '【畅呼吸 限时直降】 畅呼吸桌面式加湿器', 999.00, 899.00, '2020-05-29 19:16:04', 155, 0);
 INSERT INTO `product` VALUES (1000590, '坚果快充移动电源 10000mAh （18W max）', '【精选配件 限时直降】 坚果快充移动电源 10000mAh （18W max）', 129.00, 99.00, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000591, 'C-force  USB-C多功能转接器', '【精选配件 限时直降】 C-force  USB-C多功能转接器', 168.00, 148.00, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000602, '坚果 Pro 3', '【坚果Pro 3  限时直降】 坚果 Pro 3', 2899.00, 2399.00, '2020-05-29 19:16:03', 151, 0);
-INSERT INTO `product` VALUES (1000603, '惠普小印手持照片打印机 Sprocket PLUS', '【】 惠普小印手持照片打印机 Sprocket PLUS', 499.00, 0.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000603, '惠普小印手持照片打印机 Sprocket PLUS', '【】 惠普小印手持照片打印机 Sprocket PLUS', 499.00, 399.00, '2020-05-29 19:16:04', 311, 0);
 INSERT INTO `product` VALUES (1000604, '坚果 Pro 3 足迹保护套 人类首次公开使用乙醚', '【精选配件 限时直降】 坚果 Pro 3 足迹保护套 人类首次公开使用乙醚', 49.00, 39.00, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000605, '坚果 Pro 3 足迹保护套 德国天文学家开普勒出生', '【精选配件 限时直降】 坚果 Pro 3 足迹保护套 德国天文学家开普勒出生', 49.00, 39.00, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000606, '坚果 Pro 3 足迹保护套 数学家哈密顿首次发现四元数', '【精选配件 限时直降】 坚果 Pro 3 足迹保护套 数学家哈密顿首次发现四元数', 49.00, 39.00, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000607, '坚果 Pro 3 足迹保护套 克里斯蒂安·多普勒出生', '【精选配件 限时直降】 坚果 Pro 3 足迹保护套 克里斯蒂安·多普勒出生', 49.00, 39.00, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000608, '坚果 Pro 3 足迹保护套 莫里斯·詹姆士·麦当劳出生', '【精选配件 限时直降】 坚果 Pro 3 足迹保护套 莫里斯·詹姆士·麦当劳出生', 49.00, 39.00, '2020-05-29 19:16:04', 185, 0);
-INSERT INTO `product` VALUES (1000609, '坚果 弯头数据线（Type-C）', '【】 坚果 弯头数据线（Type-C）', 24.90, 0.00, '2020-05-29 19:16:04', 185, 0);
+INSERT INTO `product` VALUES (1000609, '坚果 弯头数据线（Type-C）', '【】 坚果 弯头数据线（Type-C）', 24.90, 19.90, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000610, 'Smartisan  颈挂蓝牙耳机', '【精选配件 限时直降】 Smartisan  颈挂蓝牙耳机', 199.00, 179.00, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000611, '足迹保护套 人类首次公开使用乙醚 for iPhone 11', '【精选配件 限时直降】 足迹保护套 人类首次公开使用乙醚 for iPhone 11', 69.00, 55.00, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000612, '足迹保护套  英国科学杂志《自然》出版 for iPhone 11', '【精选配件 限时直降】 足迹保护套  英国科学杂志《自然》出版 for iPhone 11', 69.00, 55.00, '2020-05-29 19:16:04', 185, 0);
@@ -3904,30 +3904,30 @@ INSERT INTO `product` VALUES (1000613, '足迹保护套 克里斯蒂安·多普�
 INSERT INTO `product` VALUES (1000614, '足迹保护套 莫里斯·詹姆士·麦当劳出生 for iPhone 11', '【精选配件 限时直降】 足迹保护套 莫里斯·詹姆士·麦当劳出生 for iPhone 11', 69.00, 55.00, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000615, '足迹保护套 莱卡成为第一只进入地球轨道的动物 for iPhone 11', '【精选配件 限时直降】 足迹保护套 莱卡成为第一只进入地球轨道的动物 for iPhone 11', 69.00, 55.00, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000618, '畅呼吸电子温湿度计', '【畅呼吸 限时直降】 畅呼吸电子温湿度计', 99.00, 89.00, '2020-05-29 19:16:04', 155, 0);
-INSERT INTO `product` VALUES (1000619, '惠普（HP）DeskJet 2676 彩色喷墨无线多功能打印机', '【】 惠普（HP）DeskJet 2676 彩色喷墨无线多功能打印机', 499.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000620, '惠普（HP）DeskJet 3636 彩色喷墨无线多功能打印机', '【】 惠普（HP）DeskJet 3636 彩色喷墨无线多功能打印机', 499.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000621, '惠普（HP） DJ 3776 彩色喷墨无线多功能打印机', '【】 惠普（HP） DJ 3776 彩色喷墨无线多功能打印机', 799.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000622, '惠普（HP）Smart Tank 511 彩色喷墨连供多功能打印机', '【】 惠普（HP）Smart Tank 511 彩色喷墨连供多功能打印机', 1499.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000623, '惠普（HP）Smart Tank 519 彩色喷墨连供多功能打印机', '【】 惠普（HP）Smart Tank 519 彩色喷墨连供多功能打印机', 1399.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000624, '惠普（HP）Mini M17w 黑白激光无线单功能打印机', '【】 惠普（HP）Mini M17w 黑白激光无线单功能打印机', 1099.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000625, '惠普(HP) 口袋照片打印机ZINK相纸（20张）', '【】 惠普(HP) 口袋照片打印机ZINK相纸（20张）', 79.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000626, '惠普（HP）原装680墨盒  适用HP2138 3638 3636 3838 5088打印机', '【】 惠普（HP）原装680墨盒  适用HP2138 3638 3636 3838 5088打印机', 69.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000630, '惠普（HP）GT53XL 黑色墨水', '【】 惠普（HP）GT53XL 黑色墨水', 59.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000631, '惠普（HP）GT52彩色墨水', '【】 惠普（HP）GT52彩色墨水', 64.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000633, '惠普（HP）Mini M30w 黑白激光无线多功能打印机', '【】 惠普（HP）Mini M30w 黑白激光无线多功能打印机', 1299.00, 0.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000619, '惠普（HP）DeskJet 2676 彩色喷墨无线多功能打印机', '【】 惠普（HP）DeskJet 2676 彩色喷墨无线多功能打印机', 499.00, 399.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000620, '惠普（HP）DeskJet 3636 彩色喷墨无线多功能打印机', '【】 惠普（HP）DeskJet 3636 彩色喷墨无线多功能打印机', 499.00, 399.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000621, '惠普（HP） DJ 3776 彩色喷墨无线多功能打印机', '【】 惠普（HP） DJ 3776 彩色喷墨无线多功能打印机', 799.00, 699.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000622, '惠普（HP）Smart Tank 511 彩色喷墨连供多功能打印机', '【】 惠普（HP）Smart Tank 511 彩色喷墨连供多功能打印机', 1499.00, 1399.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000623, '惠普（HP）Smart Tank 519 彩色喷墨连供多功能打印机', '【】 惠普（HP）Smart Tank 519 彩色喷墨连供多功能打印机', 1399.00, 1299.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000624, '惠普（HP）Mini M17w 黑白激光无线单功能打印机', '【】 惠普（HP）Mini M17w 黑白激光无线单功能打印机', 1099.00, 999.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000625, '惠普(HP) 口袋照片打印机ZINK相纸（20张）', '【】 惠普(HP) 口袋照片打印机ZINK相纸（20张）', 79.00, 69.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000626, '惠普（HP）原装680墨盒  适用HP2138 3638 3636 3838 5088打印机', '【】 惠普（HP）原装680墨盒  适用HP2138 3638 3636 3838 5088打印机', 69.00, 59.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000630, '惠普（HP）GT53XL 黑色墨水', '【】 惠普（HP）GT53XL 黑色墨水', 59.00, 49.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000631, '惠普（HP）GT52彩色墨水', '【】 惠普（HP）GT52彩色墨水', 64.00, 54.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000633, '惠普（HP）Mini M30w 黑白激光无线多功能打印机', '【】 惠普（HP）Mini M30w 黑白激光无线多功能打印机', 1299.00, 1199.00, '2020-05-29 19:16:04', 311, 0);
 INSERT INTO `product` VALUES (1000637, 'Smartisan 真无线蓝牙耳机', '【精选配件 限时直降】 Smartisan 真无线蓝牙耳机', 249.00, 199.00, '2020-05-29 19:16:04', 185, 0);
 INSERT INTO `product` VALUES (1000638, '坚果 Pro 3 smartisan 复古相机保护套', '【精选配件 限时直降】 坚果 Pro 3 smartisan 复古相机保护套', 49.00, 39.00, '2020-05-29 19:16:04', 185, 0);
-INSERT INTO `product` VALUES (1000642, '科沃斯扫地机器人 DK35', '【】 科沃斯扫地机器人 DK35', 1699.00, 0.00, '2020-05-29 19:16:04', 313, 0);
-INSERT INTO `product` VALUES (1000643, '科沃斯扫地机器人  DH45', '【】 科沃斯扫地机器人  DH45', 1799.00, 0.00, '2020-05-29 19:16:04', 313, 0);
-INSERT INTO `product` VALUES (1000644, '科沃斯扫地机器人 DF45', '【】 科沃斯扫地机器人 DF45', 1699.00, 0.00, '2020-05-29 19:16:04', 313, 0);
-INSERT INTO `product` VALUES (1000645, '科沃斯扫地机器人 DN55', '【】 科沃斯扫地机器人 DN55', 2399.00, 0.00, '2020-05-29 19:16:04', 313, 0);
-INSERT INTO `product` VALUES (1000648, 'GoBiggeR 便携式触屏显示器  ZB156UT', '【】 GoBiggeR 便携式触屏显示器  ZB156UT', 1999.00, 0.00, '2020-05-29 19:16:04', 218, 0);
-INSERT INTO `product` VALUES (1000649, 'GoBiggeR  便携式触屏显示器 ZB156TF', '【】 GoBiggeR  便携式触屏显示器 ZB156TF', 1599.00, 0.00, '2020-05-29 19:16:04', 218, 0);
-INSERT INTO `product` VALUES (1000650, 'GoBiggeR 便携式触屏显示器 ZB133TF-W ', '【】 GoBiggeR 便携式触屏显示器 ZB133TF-W ', 1449.00, 0.00, '2020-05-29 19:16:04', 218, 0);
-INSERT INTO `product` VALUES (1000653, '时光云摩猫梳', '【】 时光云摩猫梳', 49.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000654, 'STOJO 可折叠硅胶旅行杯', '【】 STOJO 可折叠硅胶旅行杯', 118.00, 0.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000642, '科沃斯扫地机器人 DK35', '【】 科沃斯扫地机器人 DK35', 1699.00, 1599.00, '2020-05-29 19:16:04', 313, 0);
+INSERT INTO `product` VALUES (1000643, '科沃斯扫地机器人  DH45', '【】 科沃斯扫地机器人  DH45', 1799.00, 1699.00, '2020-05-29 19:16:04', 313, 0);
+INSERT INTO `product` VALUES (1000644, '科沃斯扫地机器人 DF45', '【】 科沃斯扫地机器人 DF45', 1699.00, 1599.00, '2020-05-29 19:16:04', 313, 0);
+INSERT INTO `product` VALUES (1000645, '科沃斯扫地机器人 DN55', '【】 科沃斯扫地机器人 DN55', 2399.00, 2099.00, '2020-05-29 19:16:04', 313, 0);
+INSERT INTO `product` VALUES (1000648, 'GoBiggeR 便携式触屏显示器  ZB156UT', '【】 GoBiggeR 便携式触屏显示器  ZB156UT', 1999.00, 1799.00, '2020-05-29 19:16:04', 218, 0);
+INSERT INTO `product` VALUES (1000649, 'GoBiggeR  便携式触屏显示器 ZB156TF', '【】 GoBiggeR  便携式触屏显示器 ZB156TF', 1599.00, 1299.00, '2020-05-29 19:16:04', 218, 0);
+INSERT INTO `product` VALUES (1000650, 'GoBiggeR 便携式触屏显示器 ZB133TF-W ', '【】 GoBiggeR 便携式触屏显示器 ZB133TF-W ', 1449.00, 1339.00, '2020-05-29 19:16:04', 218, 0);
+INSERT INTO `product` VALUES (1000653, '时光云摩猫梳', '【】 时光云摩猫梳', 49.00, 39.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000654, 'STOJO 可折叠硅胶旅行杯', '【】 STOJO 可折叠硅胶旅行杯', 118.00, 98.00, '2020-05-29 19:16:04', 311, 0);
 INSERT INTO `product` VALUES (1000655, '坚果快充移动电源 20000mAh（45W MAX)', '【精选配件 限时直降】 坚果快充移动电源 20000mAh（45W MAX)', 249.00, 155.00, '2020-05-29 19:16:04', 185, 0);
-INSERT INTO `product` VALUES (1000659, 'H1加湿器', '【】 H1加湿器', 69.00, 0.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000659, 'H1加湿器', '【】 H1加湿器', 69.00, 59.00, '2020-05-29 19:16:04', 311, 0);
 INSERT INTO `product` VALUES (1000660, '抖音文创 Raincoat 雨衣外套', '【抖音文创 限时直降】 抖音文创 Raincoat 雨衣外套', 239.00, 209.00, '2020-05-29 19:16:04', 311, 0);
 INSERT INTO `product` VALUES (1000661, '抖音文创 Card Case 抖音力工卡挂件套装', '【抖音文创 限时直降】 抖音文创 Card Case 抖音力工卡挂件套装', 69.00, 59.00, '2020-05-29 19:16:04', 311, 0);
 INSERT INTO `product` VALUES (1000662, '抖音文创 指环手机支架', '【抖音文创 限时直降】 抖音文创 指环手机支架', 19.00, 18.00, '2020-05-29 19:16:04', 311, 0);
@@ -4065,13 +4065,13 @@ INSERT INTO `product` VALUES (1000816, '糖猫 plus2手表', '【精选好物 �
 INSERT INTO `product` VALUES (1000817, '糖猫 前后双摄可视频K1儿童手表', '【精选好物 限时促销】 糖猫 前后双摄可视频K1儿童手表', 499.00, 449.00, '2020-05-29 19:16:04', 311, 0);
 INSERT INTO `product` VALUES (1000818, '糖猫 basic儿童手表', '【】 糖猫 basic儿童手表', 119.00, 95.00, '2020-05-29 19:16:04', 311, 0);
 INSERT INTO `product` VALUES (1000819, '糖猫 儿童手表E2', '【精选好物 限时促销】 糖猫 儿童手表E2', 398.00, 289.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000828, '摩飞 砧板刀具消毒机', '【】 摩飞 砧板刀具消毒机', 328.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000829, '摩飞 家用小型手持蒸汽挂烫机', '【】 摩飞 家用小型手持蒸汽挂烫机', 398.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000830, '摩飞 料理棒', '【】 摩飞 料理棒', 399.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000831, '摩飞 干果机', '【】 摩飞 干果机', 469.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000832, '摩飞 多功能锅', '【】 摩飞 多功能锅', 990.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000833, '摩飞 食物处理器', '【】 摩飞 食物处理器', 328.00, 0.00, '2020-05-29 19:16:04', 311, 0);
-INSERT INTO `product` VALUES (1000834, '摩飞 便捷式榨汁机', '【】 摩飞 便捷式榨汁机', 199.00, 0.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000828, '摩飞 砧板刀具消毒机', '【】 摩飞 砧板刀具消毒机', 328.00, 228.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000829, '摩飞 家用小型手持蒸汽挂烫机', '【】 摩飞 家用小型手持蒸汽挂烫机', 398.00, 298.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000830, '摩飞 料理棒', '【】 摩飞 料理棒', 399.00, 299.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000831, '摩飞 干果机', '【】 摩飞 干果机', 469.00, 369.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000832, '摩飞 多功能锅', '【】 摩飞 多功能锅', 990.00, 880.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000833, '摩飞 食物处理器', '【】 摩飞 食物处理器', 328.00, 298.00, '2020-05-29 19:16:04', 311, 0);
+INSERT INTO `product` VALUES (1000834, '摩飞 便捷式榨汁机', '【】 摩飞 便捷式榨汁机', 199.00, 159.00, '2020-05-29 19:16:04', 311, 0);
 INSERT INTO `product` VALUES (1000835, '迪乐贝尔 吸管塑料杯', '【新品特惠】 迪乐贝尔 吸管塑料杯', 58.00, 48.00, '2020-05-29 19:16:04', 311, 0);
 INSERT INTO `product` VALUES (1000836, 'Remax 如意挂脖风扇', '【新品特惠】 Remax 如意挂脖风扇', 69.00, 59.00, '2020-05-29 19:16:04', 311, 0);
 INSERT INTO `product` VALUES (1000837, 'REMAX 致美系列弹盖保温杯', '【新品特惠】 REMAX 致美系列弹盖保温杯', 68.00, 58.00, '2020-05-29 19:16:04', 311, 0);
@@ -4411,7 +4411,7 @@ CREATE TABLE `productorder`  (
   INDEX `productorder_address`(`productorder_address` ASC) USING BTREE,
   INDEX `productorder_ibfk_2`(`productorder_user_id` ASC) USING BTREE,
   CONSTRAINT `productorder_ibfk_1` FOREIGN KEY (`productorder_address`) REFERENCES `address` (`address_areaId`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 262 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 263 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of productorder
@@ -4435,7 +4435,7 @@ CREATE TABLE `productorderitem`  (
   INDEX `productorderitem_user_id`(`productorderitem_user_id` ASC) USING BTREE,
   CONSTRAINT `productorderitem_ibfk_1` FOREIGN KEY (`productorderitem_product_id`) REFERENCES `product` (`product_id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `productorderitem_ibfk_2` FOREIGN KEY (`productorderitem_order_id`) REFERENCES `productorder` (`productorder_id`) ON DELETE CASCADE ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 317 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 321 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of productorderitem
@@ -4445,6 +4445,7 @@ INSERT INTO `productorderitem` VALUES (313, 1, 59.00, 1000836, NULL, 1, NULL);
 INSERT INTO `productorderitem` VALUES (314, 1, 899.00, 1000558, NULL, 1, NULL);
 INSERT INTO `productorderitem` VALUES (315, 1, 15.00, 203, NULL, 1, NULL);
 INSERT INTO `productorderitem` VALUES (316, 1, 2399.00, 1000602, NULL, 1, NULL);
+INSERT INTO `productorderitem` VALUES (320, 1, 19.00, 205, NULL, 5, NULL);
 
 -- ----------------------------
 -- Table structure for property
@@ -4525,7 +4526,7 @@ CREATE TABLE `user`  (
   INDEX `user_homeplace`(`user_homeplace` ASC) USING BTREE,
   CONSTRAINT `user_ibfk_1` FOREIGN KEY (`user_address`) REFERENCES `address` (`address_areaId`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `user_ibfk_2` FOREIGN KEY (`user_homeplace`) REFERENCES `address` (`address_areaId`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of user
@@ -4534,5 +4535,6 @@ INSERT INTO `user` VALUES (1, 'zxc123', '11', 'zxc123', 'zxc123', 0, '2018-10-08
 INSERT INTO `user` VALUES (2, '123qwe', 'qwe', 'bb9838ddd3bf964fca9fefc425cf17bb', NULL, 0, '2023-06-01', '110101', '130000', NULL);
 INSERT INTO `user` VALUES (3, 'qweasd', 'qwe', 'bb9838ddd3bf964fca9fefc425cf17bb', NULL, 0, '2023-06-01', '110101', '130000', NULL);
 INSERT INTO `user` VALUES (4, '曾强', 'qwe', 'bb9838ddd3bf964fca9fefc425cf17bb', NULL, 0, '2023-06-01', '110101', '130000', NULL);
+INSERT INTO `user` VALUES (5, 'zq', 'zq', '60fe910824ac13b77f71f20e266a723f', NULL, 0, '2023-06-23', '110101', '130000', NULL);
 
 SET FOREIGN_KEY_CHECKS = 1;
