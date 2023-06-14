@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <script src="${pageContext.request.contextPath}/static/js/fore/fore_home.js"></script>
     <link href="${pageContext.request.contextPath}/static/css/fore/fore_home.css" rel="stylesheet"/>
-    <title>南昌大学 -- 电子商城</title>
+    <title>栀子花开 -- 电子商城</title>
 </head>
 <style>
 .navSidebars{width:65px;position:fixed;right:10px;top:550px;background:#f8f6f6;z-index:99999}.navSidebars div{padding-top:10px;text-align:center;cursor:pointer;position:relative;height:42px}
@@ -66,7 +66,7 @@
     </div>
     <div class="header-wrap">
 	    <div class="home_nav">
-		   <a href="${pageContext.request.contextPath}"><img src="${pageContext.request.contextPath}/static/images/fore/WebsiteImage/mallsmal.png"></a>
+		   <a href="${pageContext.request.contextPath}"><img src="${pageContext.request.contextPath}/static/images/fore/WebsiteImage/logo.png"></a>
 		        <div class="mallSearch">
 	            <form action="${pageContext.request.contextPath}/product" method="get">
 	                <div class="mallSearch-input">

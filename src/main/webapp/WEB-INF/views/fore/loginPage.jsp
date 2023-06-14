@@ -29,15 +29,10 @@
             border-bottom: 1px solid #e5e5e5;
         }*/
     </style>
-    <title>南昌大学 -- 登录</title>
+    <title>栀子花开 -- 登录</title>
 </head>
 <body>
 <%@ include file="include/navigator.jsp" %>
-<%--<nav id="baseNavigator">
-   <a href="${pageContext.request.contextPath}" target="_self">
-        <img src="${pageContext.request.contextPath}/static/images/fore/WebsiteImage/logo.png" style="margin-top:-30px;"/>
-  </a>
-</nav>--%>
 <div class="content">
     <div class="contentMain"></div>
     <div class="loginDiv">
