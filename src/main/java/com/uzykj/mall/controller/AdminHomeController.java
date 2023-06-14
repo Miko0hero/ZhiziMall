@@ -119,8 +119,8 @@ public class AdminHomeController {
         int[] orderNotShippedArray = new int[7];//未发货订单叔祖
         int[] orderUnconfirmedArray = new int[7];//未确认订单数组
         int[] orderSuccessArray = new int[7];//交易成功数组
-        if (!orderGroupList.isEmpty()) {
-            if(orderGroupList.get(0)!=null)
+//        if (!orderGroupList.isEmpty()) {
+//            if(orderGroupList.get(0)!=null)
             for (OrderGroup orderGroup : orderGroupList) {
 
                 int index = 0;
@@ -145,7 +145,7 @@ public class AdminHomeController {
                         break;
                 }
             }
-        }
+//        }
         log.info("获取总交易订单数组");
         for (int i = 0; i < dateStr.length; i++) {
             orderTotalArray[i] = orderUnpaidArray[i] + orderNotShippedArray[i] + orderUnconfirmedArray[i] + orderSuccessArray[i];

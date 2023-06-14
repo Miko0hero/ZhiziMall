@@ -174,7 +174,7 @@
 
             //设置样式
             $("#div_home_title").children("span").text(title);
-            document.title = "南昌大学 - "+title;
+            document.title = "栀子商城 - "+title;
             //ajax请求页面
             ajaxUtil.getPage(url,null,true);
         }

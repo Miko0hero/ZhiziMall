@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Created-By: IntelliJ IDEA
 Built-By: 邓进伟
 Build-Jdk: Oracle OpenJDK version 11.0.19
-Implementation-Title: 柚子商城
+Implementation-Title: 栀子商城
 Implementation-Version: 1.2.0
 Implementation-Vendor-Id: com.uzykj
 Main-Class: ${start-class}

@@ -3,7 +3,7 @@
 <head>
     <script src="${pageContext.request.contextPath}/static/js/fore/fore_register.js"></script>
     <link href="${pageContext.request.contextPath}/static/css/fore/fore_register.css" rel="stylesheet">
-    <title>柚子云购 -- 用户注册</title>
+    <title>栀子云购 -- 用户注册</title>
     <script>
         $(function () {
             $("span.address_province").text($("#select_order_address_province").find("option:selected").text());

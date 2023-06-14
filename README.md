@@ -1,4 +1,4 @@
-# 柚子云电子商城
+# 栀子云电子商城
 [![stars](https://badgen.net/github/stars/ghostxbh/uzy-ssm-mall?icon=github&color=4ab8a1)](https://github.com/ghostxbh/uzy-ssm-mall)
 [![forks](https://badgen.net/github/forks/ghostxbh/uzy-ssm-mall?icon=github&color=4ab8a1)](https://github.com/ghostxbh/uzy-ssm-mall)
 

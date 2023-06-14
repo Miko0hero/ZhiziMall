@@ -35,7 +35,7 @@
         <p id="container_login">
             <c:choose>
                 <c:when test="${requestScope.user.user_name==null}">
-                    <em>Ding，欢迎来柚子云购商城</em>
+                    <em>Ding，欢迎来栀子云购商城</em>
                     <a href="${pageContext.request.contextPath}/login" style="color:#FA0808">请登录</a>
                     <a href="${pageContext.request.contextPath}/register">免费注册</a>
                 </c:when>

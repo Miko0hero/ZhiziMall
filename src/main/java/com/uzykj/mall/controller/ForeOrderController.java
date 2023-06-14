@@ -986,7 +986,7 @@ public class ForeOrderController {
             return object;
         }
         // 验证订单状态
-        if (order.getProductOrder_status() != 0) {
+        if (order.getProductOrder_status() != 2) {
             log.warn("订单状态不正确，返回订单列表页");
             object.put("miss", false);
             return object;

@@ -29,7 +29,7 @@
             border-bottom: 1px solid #e5e5e5;
         }*/
     </style>
-    <title>柚子云购 -- 登录</title>
+    <title>栀子云购 -- 登录</title>
 </head>
 <body>
 <%@ include file="include/navigator.jsp" %>

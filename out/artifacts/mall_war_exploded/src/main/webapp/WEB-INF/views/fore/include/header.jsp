@@ -21,6 +21,6 @@
     <script src="${pageContext.request.contextPath}/static/js/bootstrap-select.min.js"></script>
     <script src="${pageContext.request.contextPath}/static/js/defaults-zh_CN.min.js"></script>
     <script src="${pageContext.request.contextPath}/static/js/base.js"></script>
-    <meta name="Keywords" content="柚子云,移动系统,在线软件,客户管理系统,开源软件,客户关系管理软件"/>
-	<meta name="Description" content="柚子云技术团队,汇聚多名互联网前线科技公司核心研发,为企业个人定制化web平台、产品、移动等"/>
+    <meta name="Keywords" content="栀子云,移动系统,在线软件,客户管理系统,开源软件,客户关系管理软件"/>
+	<meta name="Description" content="栀子云技术团队,汇聚多名互联网前线科技公司核心研发,为企业个人定制化web平台、产品、移动等"/>
 </head>

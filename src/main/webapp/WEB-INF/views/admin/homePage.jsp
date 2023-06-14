@@ -4,7 +4,7 @@
     <script src="${pageContext.request.contextPath}/static/js/admin/admin_home.js"></script>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/admin/admin_home.css"/>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/admin/admin_main.css"/>
-    <title>南昌大学 - 管理首页</title>
+    <title>栀子商城 - 管理首页</title>
 </head>
 <body>
 <div id="div_home_main">

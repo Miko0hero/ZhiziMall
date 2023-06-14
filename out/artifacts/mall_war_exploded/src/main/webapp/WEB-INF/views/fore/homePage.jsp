@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <script src="${pageContext.request.contextPath}/static/js/fore/fore_home.js"></script>
     <link href="${pageContext.request.contextPath}/static/css/fore/fore_home.css" rel="stylesheet"/>
-    <title>柚子云购 -- 电子商城</title>
+    <title>栀子云购 -- 电子商城</title>
 </head>
 <style>
 .navSidebars{width:65px;position:fixed;right:10px;top:550px;background:#f8f6f6;z-index:99999}.navSidebars div{padding-top:10px;text-align:center;cursor:pointer;position:relative;height:42px}
